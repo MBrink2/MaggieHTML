@@ -11,11 +11,15 @@
 }
 
 #grad1 {
-  height: 200px;
-    background: red; /* For browsers that do not support gradients */
-    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20vw;
 }
-
 </style>
-  <h1> Hello World</h1>
-   <div id="grad1"></div>
+  
+ <h1>id=grad1>Hello World</h1>
