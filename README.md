@@ -1,2 +1,0 @@
-# MaggieHTML
-MaggieHTMLFiles
